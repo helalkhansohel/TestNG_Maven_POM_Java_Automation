@@ -1,0 +1,6 @@
+TestRunner\ProductPurchaseTestRunner.class
+Pages\Login.class
+Pages\ProductPurchase.class
+Setup\Setup.class
+TestRunner\LoginTestRunner.class
+Utils\Utils.class

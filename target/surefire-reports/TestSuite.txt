@@ -1,0 +1,52 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 123.162 sec <<< FAILURE! - in TestSuite
+doUserLogin(TestRunner.LoginTestRunner)  Time elapsed: 32.346 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .login
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'HELAL-KHAN-SOHE', ip: '192.168.0.112', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [10e4b403-cdab-400a-814c-4e01ab1dc692, findElement {using=css selector, value=.login}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:63942, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8716, moz:profile: C:\Users\User\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:63942/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 10e4b403-cdab-400a-814c-4e01ab1dc692
+	at TestRunner.LoginTestRunner.doUserLogin(LoginTestRunner.java:24)
+
+loginWithInvalidEmail(TestRunner.LoginTestRunner)  Time elapsed: 12.389 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+TypeError: browsingContext.currentWindowGlobal is null
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'HELAL-KHAN-SOHE', ip: '192.168.0.112', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [10e4b403-cdab-400a-814c-4e01ab1dc692, findElement {using=css selector, value=.login}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:63942, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8716, moz:profile: C:\Users\User\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:63942/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 10e4b403-cdab-400a-814c-4e01ab1dc692
+	at TestRunner.LoginTestRunner.loginWithInvalidEmail(LoginTestRunner.java:44)
+
+loginWithWrongPassword(TestRunner.LoginTestRunner)  Time elapsed: 0.017 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Failed to decode response from marionette
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'HELAL-KHAN-SOHE', ip: '192.168.0.112', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [10e4b403-cdab-400a-814c-4e01ab1dc692, get {url=http://automationpractice.com}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:63942, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8716, moz:profile: C:\Users\User\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:63942/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 10e4b403-cdab-400a-814c-4e01ab1dc692
+	at TestRunner.LoginTestRunner.loginWithWrongPassword(LoginTestRunner.java:55)
+
+logout(TestRunner.LoginTestRunner)  Time elapsed: 0.126 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'HELAL-KHAN-SOHE', ip: '192.168.0.112', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [10e4b403-cdab-400a-814c-4e01ab1dc692, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:63942, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8716, moz:profile: C:\Users\User\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:63942/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 10e4b403-cdab-400a-814c-4e01ab1dc692
+
+selectMyProduct(TestRunner.ProductPurchaseTestRunner)  Time elapsed: 61.577 sec  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 0
+	at TestRunner.ProductPurchaseTestRunner.selectMyProduct(ProductPurchaseTestRunner.java:20)
+

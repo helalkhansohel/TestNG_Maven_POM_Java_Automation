@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [E-commerce portal automation]" verbose="0">
+  <test thread-count="1" name="E-commerce portal login(failed)" verbose="0">
+    <classes>
+      <class name="TestRunner.LoginTestRunner">
+        <methods>
+          <include name="setUp"/>
+          <include name="screenShot"/>
+          <include name="loginWithInvalidEmail"/>
+          <include name="logout"/>
+          <include name="doUserLogin"/>
+          <include name="loginWithWrongPassword"/>
+        </methods>
+      </class> <!-- TestRunner.LoginTestRunner -->
+    </classes>
+  </test> <!-- E-commerce portal login(failed) -->
+  <test thread-count="1" name="Purchase Product(failed)" verbose="0">
+    <classes>
+      <class name="TestRunner.ProductPurchaseTestRunner">
+        <methods>
+          <include name="setUp"/>
+          <include name="screenShot"/>
+          <include name="selectMyProduct"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- TestRunner.ProductPurchaseTestRunner -->
+    </classes>
+  </test> <!-- Purchase Product(failed) -->
+</suite> <!-- Failed suite [E-commerce portal automation] -->
